@@ -8,6 +8,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+       BankAccount bankAccount = new BankAccount();
+       bankAccount.setBalance(10000);
+       bankAccount.setCustomerFirstName("Daniel");
+       bankAccount.setCustomerLastName("Petersson");
+        bankAccount.displayBankAccountInfo();
+       bankAccount.withdrawal(900);
+       bankAccount.displayBankAccountInfo();
     }
 }
